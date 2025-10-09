@@ -51,9 +51,9 @@ Please submit the image(s) after decoding. The image(s) should have the secret m
 
 You can use this code snippet to include a picture
 \begin{figure}[h!]
-    \includegraphics[scale = 0.3]{figs/decoded_message.png}
+    \includegraphics[scale = 0.3]{figs/task1_decoded_message.png}
 
-    \label{fig:answer}
+    \label{fig:answer to task 1a}
 \end{figure}
 
 }
@@ -64,9 +64,9 @@ You can use this code snippet to include a picture
 Please describe what you did with the image with words, and tell us where to find the code you wrote for this question.
 
 \solution{
-At first I had the image set to gray which showed only the middle statement 
-"these task will lead us to him". The after adjusting (gray, 0, 255, ...), making it (secret, ..., ... ) it worked.
-You can find the code here: \hyperlink{https://github.com/josephineoe/Robot-Perception/blob/main/Homework/homework1.ipynb}{here} \textbf
+I had to play around with the function cv2.threshold, at first the image only showed the middle statement 
+"these task will lead us to him". Then I changed the colour code to white (255) and black (0) to get the full message.
+You can find the code to all 4 tasks here: \hyperlink{https://github.com/josephineoe/Robot-Perception/blob/main/Homework/homework1.ipynb}{here} \textbf
 
 }
 
@@ -78,7 +78,13 @@ You can find the code here: \hyperlink{https://github.com/josephineoe/Robot-Perc
 Given the \href{https://github.com/zalandoresearch/fashion-mnist}{Fasion-MNIST dataset}, \textbf{train} an unsupervised learning neural network that gives you a lower-dimensional representation of the images, after which you could easily use tSNE from \texttt{Scikit-Learn} to bring the dimension down to 2. \textbf{Visualize} the results of all 10000 images in one single visualization.
 
 \solution{
-Type your answer here
+
+\begin{figure}[h!]
+    \includegraphics[scale = 0.3]{figs/task2_plot.png}
+
+    \label{fig:answer to task 2}
+\end{figure}
+
 }
 
 \clearpage
@@ -88,7 +94,12 @@ Type your answer here
 Use the pyAprilTag package provided in the class, or other free packages (e.g., OpenCV’s camera calibration toolkit) that you may be aware of, to \textbf{calibrate} your camera and provide the full K matrix, with the top two distortion parameters k1 and k2.
 
 \solution{
-Type your answer here
+
+\begin{figure}[h!]
+    \includegraphics[scale = 0.3]{figs/task3_calib_results.png}
+
+    \label{fig:answer to task 3 k matrix and distortion}
+\end{figure}
 
 }
 
@@ -98,16 +109,21 @@ Type your answer here
 Use the pyAprilTag package to detect an AprilTag in an image (or use OpenCV for an Aruco Tag), for which you should take a photo of a tag. Use the K matrix you obtained above, to draw a 3D cube of the same size of the tag on the image, as if this virtual cube really is on top of the tag. \textbf{Document} the methods you use, and \textbf{show} your AR results from at least two different perspectives.
 \begin{figure}[h]
     \centering
-    \includegraphics[scale = 0.2]{figs/ar.png}
+    \includegraphics[scale = 0.2]{figs/task4_tag.png}
     \caption{Caption}
-    \label{fig:my_label}
+    \label{fig:tag before AR}
 \end{figure}
 
 
 \textbf{Tips}: There are many ways to do this, but you may find OpenCV's \texttt{projectPoints}, \texttt{drawContours}, \texttt{addWeighted} and \texttt{line} methods useful. You don't have to use all these methods.
 
 \solution{
-Type your answer here
+
+\begin{figure}[h!]
+    \includegraphics[scale = 0.3]{figs/task4_AR_results.png}
+
+    \label{fig:answer to task 4, me holding an AprilTag}
+\end{figure}
 
 }
 
